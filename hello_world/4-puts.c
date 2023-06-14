@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
-	* Función main
+ * main - Entry point
+ *
+ * Description: Main function
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)
