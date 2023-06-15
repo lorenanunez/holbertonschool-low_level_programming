@@ -27,8 +27,7 @@ int main(void)
 	}
 	else
 	{
-		puts("0 is zero\n");
+		printf("0 is zero\n");
 	}
-	
 	return (0);
 }
