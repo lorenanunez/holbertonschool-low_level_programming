@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_alphabet_x10 - Exercise 2 function
  *
- * Return: Always 0.
- */
+ * Description: Exercise #2 function
+ *
+ * Return: Always null
+*/
 
 void print_alphabet_x10(void)
 {
