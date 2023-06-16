@@ -2,8 +2,8 @@
 
 /**
  * print_sign - Exercise 5 function
- * 
- * @parametern: Character to print the sign
+ *
+ * @arg1: Character to print the sign
  *
  * Description: Exercise #5 function
  *
