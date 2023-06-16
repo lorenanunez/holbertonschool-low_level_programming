@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - Exercise 4 function
+ * _isalpha - Exercise 4 function
  * @c: Integer to determinate if is lower or upper
  * Description: Exercise #4 function
  *
