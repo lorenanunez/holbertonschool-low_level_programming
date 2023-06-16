@@ -2,7 +2,7 @@
 
 /**
  * _islower - Exercise 3 function
- *
+ * @c: Integer to determinate if is lower or upper
  * Description: Exercise #3 function
  *
  * Return: Always null
