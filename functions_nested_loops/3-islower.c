@@ -1,11 +1,9 @@
-#include <ctype.h>
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Exercise 2 function
+ * _islower - Exercise 3 function
  *
- * Description: Exercise #2 function
+ * Description: Exercise #3 function
  *
  * Return: Always null
 */
