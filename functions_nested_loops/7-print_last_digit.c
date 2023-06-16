@@ -5,7 +5,7 @@
  * @num: Integer to print the last digit
  * Description: Gives last digit of num
  *
- * Return: Always success (0)
+ * Return: Value of the last digit (0)
 */
 
 int print_last_digit(int num)
@@ -13,6 +13,5 @@ int print_last_digit(int num)
 	int r;
 
     r = num % 10;
-    _putchar(r);
-    return (0);
+    return (r);
 }
