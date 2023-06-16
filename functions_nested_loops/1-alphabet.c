@@ -3,16 +3,10 @@
 /**
  * main - Entry point
  *
- * Description: Main function
+ * Description: Exercise #1 function
  *
  * Return: Always 0 (Success)
 */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet()
 {
