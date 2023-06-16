@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet function
  *
  * Description: Exercise #1 function
  *
- * Return: Always 0 (Success)
+ * Return: Always null
 */
 
 void print_alphabet(void)
