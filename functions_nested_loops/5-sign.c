@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * _islower - Exercise 5 function
+ * print_sign - Exercise 5 function
+ * 
+ * @parametern: Character to print the sign
  *
  * Description: Exercise #5 function
  *
@@ -20,7 +22,8 @@ int print_sign(int n)
 		_putchar('-');
 		return (-1);
 	}
-	else {
+	else
+	{
 		_putchar('0');
 		return (0);
 	}
