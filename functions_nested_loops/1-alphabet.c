@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_alphabet function
+ * print_alphabet - Exercise 1 function
  *
  * Description: Exercise #1 function
  *
