@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_last:_digit - Exercise 7 function
- * @num: Integer to print the last digit
- * Description: Gives last digit of num
+ * jack_bauer - Exercise 8 function
  *
- * Return: Value of the last digit (0)
+ * Description: Prints all hours and minutes
+ *
+ * Return: Always null
 */
 
 void jack_bauer(void)
