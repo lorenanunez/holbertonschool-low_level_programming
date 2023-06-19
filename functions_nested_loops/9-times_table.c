@@ -10,11 +10,7 @@
 
 void times_table(void)
 {
-	int i;
-	int multiplier;
-	int result;
-	int firstDigit;
-	int secondDigit;
+	int i, multiplier, result, firstDigit, secondDigit;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -23,25 +19,25 @@ void times_table(void)
 			result = i * multiplier;
 			if (result >= 10)
 			{
+				if (multiplier > 0)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 				firstDigit = result / 10;
 				secondDigit = result % 10;
 				putchar(48 + firstDigit);
 				putchar(48 + secondDigit);
-				if (multiplier < 9)
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 			else
 			{
-				putchar(48 + result);
-				if (multiplier < 9)
+				if (multiplier > 0)
 				{
 					putchar(',');
 					putchar(' ');
 					putchar(' ');
 				}
+				putchar(48 + result);
 			}
 		}
 		putchar('\n');
