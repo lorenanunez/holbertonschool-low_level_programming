@@ -28,6 +28,7 @@ void jack_bauer(void)
 				_putchar('0');
 			}
 			_putchar(48 + minutes);
+			_putchar('\n');
 		}
 		_putchar('\n');
 	}
