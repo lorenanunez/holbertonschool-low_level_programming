@@ -28,8 +28,8 @@ void jack_bauer(void)
 			{
 				firstDigit = hours / 10;
 				secondDigit = hours % 10;
-				_putchar(firstDigit);
-				_putchar(secondDigit);
+				_putchar(48 + firstDigit);
+				_putchar(48 + secondDigit);
 			}
 			_putchar(':');
 			if (minutes < 10)
@@ -41,8 +41,8 @@ void jack_bauer(void)
 			{
 				firstDigit = minutes / 10;
 				secondDigit = minutes % 10;
-				_putchar(firstDigit);
-				_putchar(secondDigit);
+				_putchar(48 + firstDigit);
+				_putchar(48 + secondDigit);
 			}
 			_putchar('\n');
 		}
