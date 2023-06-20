@@ -13,9 +13,9 @@ void more_numbers(void)
 {
 	int i, x, firstDigit, secondDigit;
 
-	for (int i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
-		for (int x = 0; x <= 14; x++)
+		for (x = 0; x <= 14; x++)
 		{
 			firstDigit = x / 10;
 			secondDigit = x % 10;
