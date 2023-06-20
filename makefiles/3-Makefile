@@ -20,7 +20,7 @@ clean:
 	$(RM) $(NAME) $(emacs_temp_files) $(vim_temp_files)
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(NAME)
 
 fclean: clean oclean
 
