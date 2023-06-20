@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagonal - Exercise 8 function
+ * print_square - Exercise 8 function
  * @size: The size of the square
  * Description: Prints a square, followed by a new line
  *
@@ -21,7 +21,7 @@ void print_square(int size)
 				putchar('#');
 			}
 			putchar('\n');
-		}	
+		}
 	}
 	else
 	{
