@@ -17,7 +17,7 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	$(RM) $(NAME) $(emacs_temp_files) $(vim_temp_files)
+	$(RM) $(OBJ) $(NAME) $(emacs_temp_files) $(vim_temp_files)
 
 oclean:
 	$(RM) $(OBJ)
