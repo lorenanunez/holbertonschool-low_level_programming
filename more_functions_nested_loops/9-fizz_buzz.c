@@ -30,7 +30,7 @@ int main(void)
 			printf("Buzz");
 			if (i < 100)
 			{
-				putchar(' '); // Really checker? ¬¬
+				putchar(' ');
 			}
 		}
 		else
