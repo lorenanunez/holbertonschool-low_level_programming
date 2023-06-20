@@ -17,7 +17,7 @@ void print_diagonal(int height)
 		spaces = 0;
 		for (i = 0; i < height; i++)
 		{
-			while (spaces <= height)
+			while (spaces < height)
 			{
 				for (x = 0; x < spaces; x++)
 				{
