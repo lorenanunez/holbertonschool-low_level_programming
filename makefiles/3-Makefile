@@ -3,7 +3,7 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
-emacs_temp_files = *- \#*\#
+emacs_temp_files = *~ \#*\#
 vim_temp_files = *.swp
 
 .PHONY: all clean oclean fclean re
@@ -17,7 +17,7 @@ $(NAME): $(OBJ)
 	$(CC) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ) $(NAME) $(emacs_temp_files) $(vim_temp_files)
+	$(RM) $(NAME) $(emacs_temp_files) $(vim_temp_files)
 
 oclean:
 	$(RM) $(OBJ)
