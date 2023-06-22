@@ -12,12 +12,9 @@ void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; i < (int) strlen(str); i++)
+	for (i = 0; i < (int) strlen(str); i+= 2)
 	{
-		if (str[i] >= 48 && str[i] <= 57 && str[i] % 2 == 0)
-		{
-			putchar(str[i]);
-		}
+		putchar(str[i]);
 	}
 	putchar('\n');
 }
