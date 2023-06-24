@@ -11,10 +11,14 @@
 void puts_half(char *str)
 {
 	int i;
+	int lenght;
 
-	for (i = (strlen(str) - 1) / 2; i < (int) strlen(str); i++)
+	lenght = strlen(str);
+	i = (lenght % 2 == 0) ? lenght / 2 : (lenght + 1) / 2;
+	while (i < lenght)
 	{
 		putchar(str[i]);
+		i++;
 	}
 	putchar('\n');
 }
