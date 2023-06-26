@@ -8,15 +8,6 @@
  * Return: The integer value of the string
 */
 
-int main(void)
-{
-	int n;
-
-	n = _atoi("-2147483648");
-	printf("%d\n", n);
-	return (0);
-}
-
 int _atoi(char *s)
 {
 	int i;
