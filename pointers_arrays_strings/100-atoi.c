@@ -28,14 +28,14 @@ int _atoi(char *s)
 		if (s[i] == 59)
 		{
 			break;
-		}		
+		}
 		if (s[i] >= 48 && s[i] <= 57)
 		{
 			digit = s[i] - '0';
 			result = (result * 10) + digit;
 		}
 	}
-	if (minus > plus)
+	if (minus > plus || minus == 1)
 	{
 		result *= -1;
 	}
