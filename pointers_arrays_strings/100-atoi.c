@@ -13,7 +13,7 @@ int _atoi(char *s)
 	int i;
 	unsigned int result = 0;
 	int digit;
-	int positive = 1;
+	int sign = -1;
 
 	for (i = 0; i < (int) strlen(s); i++)
 	{
@@ -21,19 +21,15 @@ int _atoi(char *s)
 		{
 			break;
 		}
+		if (s[i] == 43 || s[i] == 45)
+		{
+			sign *= -1;
+		}
 		if (s[i] >= 48 && s[i] <= 57)
 		{
-			if (s[i] > 0 && s[i - 1] == 45)
-			{
-				positive = 0;
-			}
 			digit = s[i] - '0';
 			result = (result * 10) + digit;
 		}
 	}
-	if (positive == 0)
-	{
-		result *= -1;
-	}
-	return (result);
+	return (result * sign);
 }
