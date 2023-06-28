@@ -2,9 +2,9 @@
 
 /**
  * _puts_recursion - Exercise #0 function
- * 
+ *
  * @s: The string to print
- * 
+ *
  * Description: Prints a stirng followed by
  * a new line.
  *
