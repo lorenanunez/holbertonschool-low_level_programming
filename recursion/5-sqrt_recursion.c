@@ -17,8 +17,8 @@
 
 int calculate(int n, int min, int max)
 {
-	int guess;
-	int guess_powered;
+	long guess;
+	long guess_powered;
 
 	if (max < min)
 	{
@@ -56,4 +56,13 @@ int calculate(int n, int min, int max)
 int _sqrt_recursion(int n)
 {
 	return (calculate(n, 1, n));
+}
+
+int main()
+{
+	int i = 33554432;
+	printf("%d\n", i);
+	int val = _sqrt_recursion(16777216);
+	printf("%d\n", val);
+	return (0);
 }
