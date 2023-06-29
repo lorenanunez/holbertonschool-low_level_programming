@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - Exercise #5 function
- *
- * @n: The number to calculate the square root
- *
- * Description: Calculates the square root of
- * an integer.
- *
- * Return: The square root of a number. If it
- * does not have a natural square root, it
- * returns -1.
-*/
-
-int _sqrt_recursion(int n)
-{
-	calculate(n, 1, n);
-}
-
-/**
  * calculate - Exercise #5 function helper
  *
  * @n: The number to calculate the square root
@@ -56,4 +38,22 @@ int calculate(int n, int min, int max)
 	{
 		calculate(n, min, guess - 1);
 	}
+}
+
+/**
+ * _sqrt_recursion - Exercise #5 function
+ *
+ * @n: The number to calculate the square root
+ *
+ * Description: Calculates the square root of
+ * an integer.
+ *
+ * Return: The square root of a number. If it
+ * does not have a natural square root, it
+ * returns -1.
+*/
+
+int _sqrt_recursion(int n)
+{
+	return (calculate(n, 1, n));
 }
