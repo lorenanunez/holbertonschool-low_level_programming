@@ -32,11 +32,11 @@ int calculate(int n, int min, int max)
 	}
 	else if (guess_powered < n)
 	{
-		calculate(n, guess + 1, max);
+		return (calculate(n, guess + 1, max));
 	}
 	else
 	{
-		calculate(n, min, guess - 1);
+		return (calculate(n, min, guess - 1));
 	}
 }
 
