@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - Exercise #1 function
+ * _strncpy - Exercise #2 function
  * @dest: The destination
  * @src: The source string to copy
  * @n: The number of characters from the source string to copy
@@ -19,6 +19,5 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-	dest[i] = '\0';
 	return (dest);
 }
