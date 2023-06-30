@@ -7,20 +7,18 @@
  * @n: The number of characters from the source string to copy
  * Description: Concatenates two strings
  *
- * Return: The concatenated string
+ * Return: The destination string with the n characters
+ * from the source string.
 */
-
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	if (n > 0 && strlen(src) > 0)
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		for (i = 0; i < n; i++)
-		{
-			dest[i] = src[i];
-		}
+		dest[i] = src[i];
 	}
+	dest[i] = '\0';
 	return (dest);
 }
