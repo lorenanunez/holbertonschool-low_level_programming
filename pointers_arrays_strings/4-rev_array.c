@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcmp - Exercise #4 function
+ * reverse_array - Exercise #4 function
  *
  * @a: The array of integers
  * @n: The number of elements of the array
