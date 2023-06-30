@@ -1,27 +1,16 @@
 #include "main.h"
 
 /**
- * _strncpy - Exercise #2 function
+ * _strcmp - Exercise #3 function
  *
- * @src: The source string to copy
- * @n: The number of characters from the source string to copy
+ * @s1: The first string to compare
+ * @s2: The second string to compare
  *
- * Description: Concatenates two strings
+ * Description: Compares two strings
  *
- * Return: The destination string with the n characters
- * from the source string.
+ * Return: 0 if the strings are equal, -1 if s1 is lower
+ * than s2, otherwise 1;
 */
-
-int main(void)
-{
-    char s1[] = "Hello";
-    char s2[] = "World!";
-
-    printf("%d\n", _strcmp(s1, s2));
-    printf("%d\n", _strcmp(s2, s1));
-    printf("%d\n", _strcmp(s1, s1));
-    return (0);
-}
 
 int _strcmp(char *s1, char *s2)
 {
