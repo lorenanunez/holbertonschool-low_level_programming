@@ -16,33 +16,49 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i;
-	int s1length = strlen(s1);
-	int s2length = strlen(s2);
+	int s1length;
+	int s2length;
 	int strpos = 0;
 	char *str = NULL;
-	int length = s1length + s2length;
+	int length;
 
 	if (s1 == NULL)
 	{
-		s1 = "";
+		s1length = 0;
+	}
+	else
+	{
+		s1length = strlen(s1);
 	}
 	if (s2 == NULL)
 	{
-		s2 = "";
+		s2length = 0;
 	}
+	else
+	{
+		s2length = strlen(s2);
+	}
+	length = s1length + s2length;
 	str = malloc(length * sizeof(char) + 1);
 	if (str != NULL)
 	{
-		for (i = 0; i < s1length; i++)
+		if (s1length > 0)
 		{
-			str[strpos] = s1[i];
-			strpos++;
+			for (i = 0; i < s1length; i++)
+			{
+				str[strpos] = s1[i];
+				strpos++;
+			}	
 		}
-		for (i = 0; i < length; i++)
+		if (s2length > 0)
 		{
-			str[strpos] = s2[i];
-			strpos++;
+			for (i = 0; i < length; i++)
+			{
+				str[strpos] = s2[i];
+				strpos++;
+			}
 		}
+		
 		str[strpos] = '\0';
 	}
 	return (str);
