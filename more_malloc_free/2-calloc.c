@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * string_nconcat - Exercise #2 function
+ * _calloc - Exercise #2 function
  *
  * @nmemb: The number of elements in the array
  * @size: The size of each element of the array
@@ -24,7 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array = (char *) malloc(nmemb * size);
 	if (array != NULL)
 	{
-		for (i = 0; i < nmemb; i++)
+		for (i = 0; i < nmemb * size; i++)
 		{
 			array[i] = 0;
 		}
