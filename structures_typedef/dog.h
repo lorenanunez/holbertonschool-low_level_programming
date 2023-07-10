@@ -1,6 +1,6 @@
 #ifndef HEADER
 #define HEADER
-
+#include <stdio.h>
 /**
  * struct dog - Men best friend
  *
