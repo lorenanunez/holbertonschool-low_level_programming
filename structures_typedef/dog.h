@@ -1,5 +1,6 @@
 #ifndef HEADER
 #define HEADER
+
 /**
  * struct dog - Men best friend
  *
@@ -9,6 +10,7 @@
  *
  * Description: Struct to represent a dog
  */
+
 struct dog
 {
 	char *name;
