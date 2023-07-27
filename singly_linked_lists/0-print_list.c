@@ -19,41 +19,14 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str != NULL)
 		{
-			putchar('[');
-			putchar(48 + h->len);
-			putchar(']');
-			putchar(' ');
-			println(h->str);
+			printf("[%d] %s\n", h->len, h->str);
 		}
 		else
 		{
-			println("[0] (nil)");
+			printf("[0] (nil)\n");
 		}
 		list_size++;
 		h = h->next;
 	}
 	return (list_size);
-}
-
-/**
- * println - String and newline printer.
- *
- * @str: The string to print.
- *
- * Description: Prints a string to the standard
- * output followed by a new line.
- *
- * Return: Always null.
-*/
-
-void println(char *str)
-{
-	char *pointer = str;
-
-	while (*pointer != '\0')
-	{
-		putchar(*pointer);
-		pointer++;
-	}
-	putchar('\n');
 }
