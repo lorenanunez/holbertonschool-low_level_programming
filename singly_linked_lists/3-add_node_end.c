@@ -15,7 +15,6 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *theList;
-	list_t *pointer;
 
 	if (str == NULL)
 	{
@@ -33,7 +32,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		}
 		else
 		{
-			*pointer = **head;
+			list_t *pointer = *head;
+
 			while (pointer->next != NULL)
 			{
 				pointer = pointer->next;
