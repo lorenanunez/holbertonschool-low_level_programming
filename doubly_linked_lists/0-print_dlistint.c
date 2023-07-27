@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * malloc_checked - Exercise #0 function
+ * print_dlistint - Exercise #0 function.
  *
- * @b: The size of the array
+ * @h: The doubly linked list.
  *
- * Description: Allocates memory using malloc
+ * Description: Prints a doubly linked list.
  *
- * Return: A pointer to the allocated memory
+ * Return: The size of the list.
 */
 
 size_t print_dlistint(const dlistint_t *h)
